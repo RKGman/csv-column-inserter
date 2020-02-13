@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSV_Column_Inserter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="CSV Column Inserter" Height="450" Width="800">
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -27,8 +27,8 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Label Content="CSV-Column-Inserter" Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="5" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36"/>
-            <TextBox Height="32" Margin="10,10,0,0" Grid.Row="3" Grid.ColumnSpan="4" TextWrapping="Wrap" VerticalAlignment="Top" />
-            <Button Content="Browse" Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="138" Height="32"/>
+            <TextBox Height="32" Margin="10,10,0,0" Grid.Row="3" Grid.ColumnSpan="4" TextWrapping="Wrap" VerticalAlignment="Top" Text="{Binding Path=SelectedFilePath}"/>
+            <Button Content="Browse" Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="138" Height="32" Command="{Binding Path=BrowseFileCommand}"/>
             <Label Content="Column Header:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" />
             <TextBox Height="32" Margin="10,10,10,0" Grid.Row="4" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" />
             <Label Content="Column Value:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" />

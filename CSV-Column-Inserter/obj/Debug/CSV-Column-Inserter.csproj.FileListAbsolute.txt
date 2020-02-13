@@ -26,3 +26,9 @@ C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\
 C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.csproj.GenerateResource.cache
 C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.exe
 C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.pdb
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\bin\Debug\Prism.dll
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\bin\Debug\System.ValueTuple.dll
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\bin\Debug\Prism.pdb
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\bin\Debug\Prism.xml
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\bin\Debug\System.ValueTuple.xml
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.csproj.CopyComplete
