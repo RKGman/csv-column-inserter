@@ -26,8 +26,16 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="5" />
-
+            <Label Content="CSV-Column-Inserter" Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="5" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36"/>
+            <TextBox Height="32" Margin="10,10,0,0" Grid.Row="3" Grid.ColumnSpan="4" TextWrapping="Wrap" VerticalAlignment="Top" />
+            <Button Content="Browse" Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="138" Height="32"/>
+            <Label Content="Column Header:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" />
+            <TextBox Height="32" Margin="10,10,10,0" Grid.Row="4" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" />
+            <Label Content="Column Value:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" />
+            <TextBox Height="32" Margin="10,10,10,0" Grid.Row="5" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" />
+            <CheckBox Content="Default (Filename)" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="5"/>
+            <Button Content="Update" Margin="10" Grid.Row="7" Grid.ColumnSpan="5" FontWeight="Bold" FontSize="20" Grid.RowSpan="2"/>
+            
 
 
         </Grid>

@@ -12,3 +12,17 @@ C:\Users\rgarayanala\source\repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\De
 C:\Users\rgarayanala\source\repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.csproj.GenerateResource.cache
 C:\Users\rgarayanala\source\repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.exe
 C:\Users\rgarayanala\source\repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.pdb
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\bin\Debug\CSV-Column-Inserter.exe.config
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\bin\Debug\CSV-Column-Inserter.exe
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\bin\Debug\CSV-Column-Inserter.pdb
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.csprojAssemblyReference.cache
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\View\MainWindow.g.cs
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\App.g.cs
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter_MarkupCompile.cache
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter_MarkupCompile.lref
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\View\MainWindow.baml
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.g.resources
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV_Column_Inserter.Properties.Resources.resources
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.csproj.GenerateResource.cache
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.exe
+C:\Users\rgarayanala\ST_Repos\CSV-Column-Inserter\CSV-Column-Inserter\obj\Debug\CSV-Column-Inserter.pdb
