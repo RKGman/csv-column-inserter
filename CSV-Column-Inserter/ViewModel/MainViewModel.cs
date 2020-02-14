@@ -4,6 +4,7 @@ using Prism.Commands;
 using Prism.Mvvm;
 using System;
 using System.ComponentModel;
+using System.Windows;
 using System.Windows.Input;
 
 namespace CSV_Column_Inserter.ViewModel
@@ -15,8 +16,11 @@ namespace CSV_Column_Inserter.ViewModel
     {
         #region Private Properties
 
-        private string _selectedFilePath = "Please selected a CSV file...";        
+        private string _selectedFilePath = "Please selected a CSV file...";
+        private string _columnHeaderString = "New Column Header";
+        private string _columnValueString = "New Column Values";
         private bool _isValidCSV = false;
+        private bool _useUserField = false;
         private bool _setFileNameValue = true;
         private DelegateCommand _browseFileCommand;
         private DelegateCommand _updateCSVCommand;
@@ -58,6 +62,24 @@ namespace CSV_Column_Inserter.ViewModel
                 SelectedFilePath = openFD.FileName;
                 CSV_Verifier csvVerifier = new CSV_Verifier(SelectedFilePath);
                 IsValidCSV = csvVerifier.IsValidCSV();
+                ColumnValueString = SelectedFilePath;
+            }
+        }
+
+        /// <summary>
+        /// Method that executes the action of inserting values into the CSV file.
+        /// </summary>
+        private void ExecuteUpdateFile()
+        {
+            try
+            {
+                InsertColumn insert = new InsertColumn(SelectedFilePath, ColumnHeaderString, ColumnValueString);
+                insert.BeginInsertions();
+                MessageBoxResult confirmationMessage = MessageBox.Show("The operation completed without error", "Success!", MessageBoxButton.OK, MessageBoxImage.Information);
+            }            
+            catch (Exception e)
+            {
+                MessageBoxResult errorMessage = MessageBox.Show(e.Message, "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -92,7 +114,7 @@ namespace CSV_Column_Inserter.ViewModel
             {
                 if (_updateCSVCommand == null)
                 {
-                    _updateCSVCommand = new DelegateCommand(ExecuteBrowseFile);
+                    _updateCSVCommand = new DelegateCommand(ExecuteUpdateFile);
     }
                 return _updateCSVCommand;
             }
@@ -107,7 +129,34 @@ namespace CSV_Column_Inserter.ViewModel
             set
             {
                 _setFileNameValue = value;
+
+                if (_setFileNameValue == false)
+                {
+                    // Use user input string
+                    UseUserField = true;
+                    ColumnValueString = _columnValueString;
+                }
+                else
+                {
+                    // Use the file name
+                    UseUserField = false;
+                    ColumnValueString = _selectedFilePath;
+                }
+
                 OnPropertyChanged("SetFileNameValue");
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets a flag indicating whether or not to use the user defined value.
+        /// </summary>
+        public bool UseUserField
+        {
+            get { return _useUserField; }
+            set
+            {
+                _useUserField = value;
+                OnPropertyChanged("UseUserField");
             }
         }
 
@@ -134,6 +183,32 @@ namespace CSV_Column_Inserter.ViewModel
             {
                 _selectedFilePath = value;
                 OnPropertyChanged("SelectedFilePath");
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the column header string.
+        /// </summary>
+        public string ColumnHeaderString
+        {
+            get { return _columnHeaderString; }
+            set
+            {
+                _columnHeaderString = value;
+                OnPropertyChanged("ColumnHeaderString");
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the column value string.
+        /// </summary>
+        public string ColumnValueString
+        {
+            get { return _columnValueString; }
+            set
+            {
+                _columnValueString = value;
+                OnPropertyChanged("ColumnValueString");
             }
         }
 

@@ -43,6 +43,7 @@ namespace CSV_Column_Inserter.Model
                 _parser = new TextFieldParser(_filePath);
                 _parser.TextFieldType = FieldType.Delimited;
                 _parser.SetDelimiters("\t");
+                _parser.Close();
             }
             catch (Exception e)
             {

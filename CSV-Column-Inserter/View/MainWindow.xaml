@@ -30,11 +30,11 @@
 <TextBox Height="32" Margin="10,10,0,0" Grid.Row="3" Grid.ColumnSpan="4" TextWrapping="Wrap" VerticalAlignment="Top" Text="{Binding Path=SelectedFilePath}"/>
 <Button Content="Browse" Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="138" Height="32" Command="{Binding Path=BrowseFileCommand}"/>
 <Label Content="Column Header:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" />
-<TextBox Height="32" Margin="10,10,10,0" Grid.Row="4" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="{Binding Path=IsValidCSV}"/>
+            <TextBox Height="32" Margin="10,10,10,0" Grid.Row="4" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="{Binding Path=IsValidCSV}" Text="{Binding Path=ColumnHeaderString}"/>
 <Label Content="Column Value:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" />
-<TextBox Height="32" Margin="10,10,10,0" Grid.Row="5" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="{Binding Path=IsValidCSV}"/>
+            <TextBox Height="32" Margin="10,10,10,0" Grid.Row="5" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="{Binding Path=UseUserField}" Text="{Binding Path=ColumnValueString}"/>
             <CheckBox Content="Default (Filename)" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="5" IsEnabled="{Binding Path=IsValidCSV}" IsChecked="{Binding Path=SetFileNameValue}"/>
-<Button Content="Update" Margin="10" Grid.Row="7" Grid.ColumnSpan="5" FontWeight="Bold" FontSize="20" Grid.RowSpan="2" IsEnabled="{Binding Path=IsValidCSV}"/>           
+            <Button Content="Update" Margin="10" Grid.Row="7" Grid.ColumnSpan="5" FontWeight="Bold" FontSize="20" Grid.RowSpan="2" IsEnabled="{Binding Path=IsValidCSV}" Command="{Binding Path=UpdateCSVCommand}"/>           
         </Grid>
     </Grid>
 </Window>
