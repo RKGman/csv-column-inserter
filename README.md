@@ -5,7 +5,11 @@ The application defaults to using the file name as the value of the new column.
 
 Currently the application only inserts to the last column.
 
-This is primarily for demonstration purposes of the MVVM, and I am always open to ideas and suggestions.
+This is primarily for demonstration of knowledge on MVVM Design, Object-Oriented Design, and C# Style Documentation.
+
+
+I am always open to ideas and suggestions.
+
 
 Desired features (plan moving forward):
 1. Specifying the column index where to insert.
